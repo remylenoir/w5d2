@@ -1,0 +1,13 @@
+<h2>Register</h2>
+<form id="form" action="/register" method="post">
+    <label for="username">Username</label>
+    <input required="true" type="text" name="username" id="">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="">
+
+    {{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+    {{/if}}
+
+    <button type="submit">Register</button>
+</form>
